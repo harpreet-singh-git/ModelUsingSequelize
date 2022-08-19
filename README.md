@@ -1,3 +1,7 @@
-# Some details
+# Counter function
 
-* This model has been created by using typescript having database postgres using popular orm sequelize js.
+# To run use `node counter.ts`
+
+# Explanation
+
+* if we call counter it logs the result
