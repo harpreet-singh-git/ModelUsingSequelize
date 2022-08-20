@@ -1,19 +1,19 @@
-// const counter=0 : any;
-
 const counter = (num) => {
+    if (num === undefined) {
+        num = 0;
+    }
     const getCounter = () => {
         console.log(num);
         return num
     }
     const nextCounter = () => {
-
-        return num + 1;
+        num = num + 1
+        return num;
     }
     return [getCounter, nextCounter]
 }
-
-const [getNum, nextNum] = counter(1);
-getNum();
-nextNum();
-
-getNum();
+let num;
+const [getNum, nextNum] = counter(num);
+console.log(getNum());
+nextNum()
+getNum()
